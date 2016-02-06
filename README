@@ -1,0 +1,40 @@
+#TAUTOLOGY CHECKER
+
+Tautology checker is program which checks whether a given Statement is a tautology or not.
+Valid logical operators are '|', '&' and '!'
+
+* Ruby version - (2.2.2)
+
+## How to Run?
+
+    $ git clone https://github.com/sikar/TautologyChecker.git
+
+    $ cd TautologyChecker
+
+    $ bundle
+
+    $ ruby lib/app.rb
+
+
+## How to Test?
+
+    $ cd TautologyChecker
+    $ rspec spec
+
+## Example
+
+Do enter the no. of propositional statements you want to check?
+3
+Enter the propositional statement. Once you enter a propositional statement , press `Enter`:
+(a & (!b | b)) | (!a & (!b | b))
+!a & !b
+a & (b | c)
+
+Results for Statements checked for Tautology :
+True
+
+Results for Statements checked for Tautology :
+False
+
+Results for Statements checked for Tautology :
+False
